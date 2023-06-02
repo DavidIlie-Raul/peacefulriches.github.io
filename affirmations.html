@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./Varianta2-10.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Affirmations</title>
     
       
 </head>
 <body>
    
-    <main>
+    <header id="myHeader">
+        <div id="header-main-div">
+<div class="header-container">
+
+
+    <img src="./Varianta2-10.svg" alt="seed-of-life-logo" id="header-logo">
+<p class="header-item header-item1"><a href="index.html">Peaceful Riches</a></p>
+
+<nav>
+<ul class="header-flex-item header-item2" id="header-nav-ul">
+
+<li><a href="./index.html">Prosperity Test</a></li>
+<li><a href="./affirmations.html">Affirmations</a></li>
+<li><a href="https://discord.com/invite/TZmha3AUzW" target="_blank">Discord</a></li>
+
+</ul>
+
+</nav>
+ 
+<input type="checkbox" class="check-btn" id="check">
+<label for="check" class="check-label">
+    <i class="fas fa-bars" id="mobileBtnIcon"></i>
+</label>
+
+</div>
+</div>
+
+    </header>
+
+    <main id="affirmations-page-main">
         <section id="title-section">
-            <h1>Here is your affirmation!</h1>
+            <h1>Here is your daily affirmation!</h1>
         </section>
 <section id="main-section">
 
@@ -28,4 +59,5 @@
 
 </body>
 <script src="./scripts/randomAffirmation.js"></script>
+<script src="./scripts/headerResponsive.js"></script>
 </html>
