@@ -52,8 +52,8 @@ padding-right: 10px;
 #seed-of-life-logo {
 
 display: block;
-max-width: 300px;
-max-height: 300px;
+max-width: 250px;
+max-height: 250px;
 margin: 0 auto;
 padding-bottom: 30px;
 
@@ -344,6 +344,13 @@ margin: 0 auto;
     
     display: inline-block;
     
+    }
+
+    #seed-of-life-logo {
+
+max-width: 200px;
+max-height: 200px;
+
     }
 
     }
