@@ -293,6 +293,7 @@ display: none;
       .mobileOpen {
         position: fixed;
         left: 0;
+        top: 35px;
         right: 0;
         bottom: 0;
         height: calc(100vh - 35px);
