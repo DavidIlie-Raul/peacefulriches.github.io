@@ -355,7 +355,13 @@ opacity: 1;
 transition: opacity 0.3s ease;
       }
 
+#affirmation-paragraph {
 
+text-align: center;
+border: black 2px dotted;
+padding:20px;
+
+}
 
             
             

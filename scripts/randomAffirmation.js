@@ -1,17 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://github.com/PeacefulRiches/PeacefulAffirmations/blob/main/Affirmations.json')
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(data) {
-        var affirmationsArray = data.affirmations;
-        var randomIndex = Math.floor(Math.random() * affirmationsArray.length);
-        var randomText = affirmationsArray[randomIndex];
-        var heading = document.getElementById("affirmation");
-        heading.textContent = randomText;
-      })
-      .catch(function(error) {
-        console.log('Error:', error);
-      });
+const affirmationParagraph = document.getElementById('affirmation-paragraph');
+
+fetch('https://peacefulriches.github.io/Affirmations.json')
+  .then(response => {
+    // Check if the response was successful
+    if (!response.ok) {
+      throw new Error('Error: ' + response.status);
+    }
+    // Extract the JSON data from the response
+    return response.json();
+  })
+  .then(data => {
+    // Access the affirmations array from the JSON data
+    const affirmations = data.affirmations;
+    
+    // Get a random index
+    const randomIndex = Math.floor(Math.random() * affirmations.length);
+    
+    // Get a random affirmation
+    const randomAffirmation = affirmations[randomIndex];
+    
+    // Display the random affirmation
+    affirmationParagraph.textContent = randomAffirmation;
+  })
+  .catch(error => {
+    console.error(error);
   });
-  
