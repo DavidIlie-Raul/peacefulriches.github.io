@@ -3,11 +3,14 @@ const scrollThreshold = 10; // Adjust this value to control when the header appe
 const mobilebutton = document.getElementById('check');
 const mobilebuttonIcon = document.getElementById('mobileBtnIcon');
 const navElements = document.querySelectorAll('#header-nav-ul li, .header-item1');
+const headerHeight = header.offsetHeight;
 
 
 let lastScrollPosition = window.pageYOffset;
 let isScrollingUp = false;
 
+
+document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
 
 function toggleScrolling() {
   if (mobilebutton.checked) {
