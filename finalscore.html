@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <!--Made by David Ilie Raul for the Peaceful Riches Community! If you are reading this, you are awesome!, come join us on discord!-->
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="../Varianta2-10.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./Varianta2-10.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 <div class="header-container">
 
 
-    <img src="../Varianta2-10.svg" alt="seed-of-life-logo" id="header-logo">
+    <img src="./Varianta2-10.svg" alt="seed-of-life-logo" id="header-logo">
 <p class="header-item header-item1"><a href="index.html">Peaceful Riches</a></p>
 
 <nav>
@@ -41,8 +41,35 @@
 
     </header>
 
+<dialog id="NewsLetterSignupModal">
+    <img id="modal-seed-of-life-logo" src="./Varianta2-10.svg" alt="modal-seed-of-life-logo">
+    <h2>Congratulations!</h2>
+    <p>You have completed the prosperity test! We need some nice catchy text here to make you sign up to our newsletter!</p>
+    <form id="modal-newsletter-signup-form" method="post">
+
+        <div id="modal-flexbox-div">
+    <div class="modal-flex-item1">
+        <label for="modal-name-input">Please enter your name:</label>
+        <input type="text" placeholder="Your Name" id="modal-name-input" required>
+    </div>
+    <div class="modal-flex-item2">
+        <label for="modal-email-input">Please enter your E-mail:</label>
+        <input type="email" placeholder="Your E-Mail" id="modal-email-input" required>
+    </div>
+</div>
+    <button type="submit">Sign me up!</button>
+<p id="modal-email-error-errormessage" class="hidden-displaynone">A server error has occured, sorry for the inconvenience! Please try again later!</p>
+<p id="modal-email-duplicate-errormessage" class="hidden-displaynone">This E-mail is already registered! Please choose a different one!</p>
+<p id="modal-email-fake-errormessage" class="hidden-displaynone">This E-mail is invalid! Please check the E-mail you have provided and try again!</p>
+    </form>
+    <button id="closeModal">No Thanks, just show me my results</button>
+</dialog>
+
+<div id="notification" class="notification"></div>
+
+
 <main id="results-page-main">
-    <img id="seed-of-life-logo" src="../Varianta2-10.svg" alt="seed-of-life-logo">
+    <img id="seed-of-life-logo" src="./Varianta2-10.svg" alt="seed-of-life-logo">
     <h1>PEACEFUL RICHES - PROSPERITY TEST</h1><br>
     <hr>
     <h2 class="results-page-h2">THE RESULTS</h2>
@@ -63,7 +90,7 @@ completing this test!</h3><br>
     <h2 class="results-page-h2 number-range-score">76-150</h2>
     <h3 class="results-page-h3">Well done!</h3>
     <p class="results-page-p">You are already living some of your life like a prosperous person and there is a lot of
-        room for improvement ... which is exciting for you.
+        room for improvement .. which is exciting for you.
         After the 5 Week Prosperity Challenge you will be thrilled with the changes in your life!</p>
         <hr>
         <h2 class="results-page-h2 number-range-score">151-220</h2>
@@ -79,7 +106,8 @@ completing this test!</h3><br>
 
 
 </body>
-<script src="../scripts/results.js"></script>
-<script src="../scripts/headerResponsive.js"></script>
-<script src="../scripts/NLPopup.js"></script>
+<script src="./scripts/results.js"></script>
+<script src="./scripts/headerResponsive.js"></script>
+<script src="./scripts/NLPopup.js"></script>
+<script src="./scripts/mailSignUp.js"></script>
 </html>

@@ -8,7 +8,7 @@ radioButtons.forEach((radioButton) => {
   });
 });
 
-let submitButton = document.getElementById('submit-button');
+let submitButton = document.getElementById('prosperity-test-submit-button');
 console.log(submitButton); // Check that submitButton is not null
 submitButton.addEventListener('click', calculateScore);
 
@@ -33,6 +33,9 @@ function calculateScore() {
   
     console.log(finalScore); // Check the final score in the console
 }
+
+
+
 
   
   

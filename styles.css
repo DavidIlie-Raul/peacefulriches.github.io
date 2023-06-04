@@ -46,7 +46,136 @@ padding-right: 10px;
 
 }
 
+#NewsLetterSignupModal {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+  }
 
+  #NewsLetterSignupModal::backdrop {
+    
+    background-color: rgba(255, 255, 255, 0);
+backdrop-filter: blur(8px);
+
+  }
+  
+  .modal-flex-item1, .modal-flex-item2 {
+
+    width: 100%;
+padding-top: 15px;
+padding-bottom: 15px;
+
+  }
+
+  .modal-flex-item2 {
+
+padding-bottom: 25px;
+
+  }
+
+  #NewsLetterSignupModal input {
+
+    margin-left: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: whitesmoke ;
+    border: 1.5px black solid;
+
+  }
+
+  #NewsLetterSignupModal label {
+
+    margin-left: 0;
+    align-self: flex-start;
+    width: fit-content;
+padding-bottom: 5px;
+
+
+  }
+
+  #modal-flexbox-div {
+
+display: flex;
+flex-flow: column;
+align-items: flex-start;
+margin: 0 auto;
+
+  }
+
+  #closeModal {
+
+    margin: 25px auto 0px auto;
+padding: 5px;
+
+  }
+
+  #modal-email-error-errormessage {
+margin-bottom: 0;
+background-color: red;
+border-radius: 10px;
+padding: 5px;
+
+  }
+  #modal-email-duplicate-errormessage {
+    margin-bottom: 0;
+    background-color: rgb(255, 89, 0);
+    border-radius: 10px;
+    padding: 5px;
+    
+      }
+      #modal-email-fake-errormessage {
+        margin-bottom: 0;
+        background-color: rgb(255, 0, 0);
+        border-radius: 10px;
+        padding: 5px;
+        
+          }
+
+          #NewsLetterSignupModal button {
+              border: #333 2px solid;
+              border-radius: 20px;
+              background-color: whitesmoke;
+              padding:10px;
+              font-weight: bold;
+
+          }
+          #NewsLetterSignupModal button:hover {
+            border: #333 2px solid;
+            border-radius: 20px;
+            background-color: rgb(199, 199, 199);
+            
+
+        }
+
+          #modal-seed-of-life-logo {
+
+
+            max-width: 100px;
+            max-height: 100px;
+
+
+          }
+
+      .notification {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #6cfd37;
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        display: none;
+        opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+      }
+      
+  
 
 
 #seed-of-life-logo {
@@ -210,8 +339,7 @@ align-items: center;
 
     }
 
-    
-
+      
 
 
     nav {
@@ -360,6 +488,11 @@ max-height: 200px;
         opacity: 0;
         transition: opacity 0.3s ease;
       }
+      .hidden-displaynone{
+
+display: none;
+
+      }
 
       .show {
 
@@ -385,5 +518,7 @@ padding:20px;
 
   }  
   
+
+
   
             
